@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev": "cd DOC-20260218-WA0000/app && npm run dev"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0"
+  },
+  "dependencies": {
+    "lucide-react": "^0.577.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}
