@@ -15,7 +15,7 @@ const testimonials = [
       "The mentorship I received here helped me land my dream internship. The connections I made are invaluable.",
     name: 'Marcus T.',
     age: 22,
-    role: 'Alumni',
+    role: 'Youth Member',
     image: '/images/avatar-marcus.jpg',
   },
   {
@@ -23,7 +23,7 @@ const testimonials = [
       "I love how youth are truly in charge here. My ideas matter, and I've learned so much about leadership and teamwork.",
     name: 'Aisha K.',
     age: 17,
-    role: 'Youth Leader',
+    role: 'Youth Member',
     image: '/images/avatar-aisha.jpg',
   },
 ];

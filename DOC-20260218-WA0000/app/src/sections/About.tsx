@@ -34,14 +34,14 @@ export default function About() {
             <div className="relative">
               <div className="absolute -inset-4 bg-coral/10 rounded-2xl blur-xl" />
               <img
-                src="/images/about-workshop.jpg"
+                src="/images/profile1.jpg"
                 alt="Youth workshop"
                 className="relative rounded-lg shadow-xl w-full object-cover"
               />
               
               {/* Experience Badge */}
               <div className="absolute -bottom-4 -right-4 bg-navy text-white rounded-lg p-6 shadow-xl">
-                <p className="font-rubik font-bold text-4xl text-coral">10+</p>
+                <p className="font-rubik font-bold text-4xl text-coral">5+</p>
                 <p className="text-white/80 text-sm">Years of</p>
                 <p className="text-white/80 text-sm">Experience</p>
               </div>

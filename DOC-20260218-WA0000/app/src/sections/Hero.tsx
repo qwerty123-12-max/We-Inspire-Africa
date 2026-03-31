@@ -23,8 +23,8 @@ export default function Hero() {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/hero-bg.jpg"
-          alt="Youth community"
+          src="/images/WhatsApp Image 2026-03-30 at 13.43.34.jpeg"
+          alt="we inspire africa background"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-navy/80" />
@@ -85,9 +85,9 @@ export default function Hero() {
                 </div>
                 <div>
                   <p className="text-white font-rubik font-semibold text-2xl">
-                    500+
+                    70+
                   </p>
-                  <p className="text-white/60 text-sm">Youth Members</p>
+                  <p className="text-white/60 text-sm">Current Youth Members</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -96,7 +96,7 @@ export default function Hero() {
                 </div>
                 <div>
                   <p className="text-white font-rubik font-semibold text-2xl">
-                    50+
+                    1+
                   </p>
                   <p className="text-white/60 text-sm">Annual Events</p>
                 </div>
@@ -107,7 +107,7 @@ export default function Hero() {
                 </div>
                 <div>
                   <p className="text-white font-rubik font-semibold text-2xl">
-                    15+
+                    6+
                   </p>
                   <p className="text-white/60 text-sm">Partner Orgs</p>
                 </div>
@@ -126,7 +126,7 @@ export default function Hero() {
             <div className="relative">
               <div className="absolute -inset-4 bg-coral/20 rounded-2xl blur-2xl" />
               <img
-                src="/images/hero-main.jpg"
+                src="/images/profile.jpg"
                 alt="Youth collaborating"
                 className="relative rounded-lg shadow-2xl w-full object-cover hover:scale-[1.02] transition-transform duration-500"
               />
@@ -135,7 +135,7 @@ export default function Hero() {
               <div className="absolute -bottom-6 -left-6 bg-white rounded-lg shadow-xl p-4 flex items-center gap-3">
                 <div className="w-12 h-12 bg-coral rounded-full flex items-center justify-center">
                   <span className="text-white font-rubik font-bold text-xl">
-                    10
+                    5
                   </span>
                 </div>
                 <div>

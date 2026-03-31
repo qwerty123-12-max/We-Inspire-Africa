@@ -10,25 +10,27 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'hello@youthcommunity.org',
-    href: 'mailto:hello@youthcommunity.org',
+    value: 'inspireafrica001@gmail.com',
+    href: 'mailto:inspireafrica001@gmail.com',
   },
   {
     icon: Phone,
     label: 'Phone',
-    value: '(555) 123-4567',
-    href: 'tel:+15551234567',
+    value: '(+254) 725-142-221',
+    href: 'tel:+254725142221',
   },
   {
     icon: MapPin,
     label: 'Address',
-    value: '123 Community Street, City, State 12345',
+    value: 'At Bamburi behind Masjid Noor, along Utange Road Mombasa, Bamburi',
     href: '#',
   },
 ];
 
 export default function Contact() {
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSending, setIsSending] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -38,14 +40,48 @@ export default function Contact() {
   const { ref: sectionRef, isVisible: sectionVisible } =
     useScrollAnimation<HTMLDivElement>();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
-    setIsSubmitted(true);
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({ name: '', email: '', message: '' });
-    }, 3000);
+    setIsSending(true);
+    setSubmitError(null);
+
+    const formspreeFormId = 'meepevdr'; // Replace with your actual Formspree form ID
+    const endpoint = `https://formspree.io/f/${formspreeFormId}`;
+
+    try {
+      const response = await fetch(endpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          _subject: `New contact request from ${formData.name}`,
+          _replyto: formData.email,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setIsSubmitted(true);
+        setFormData({ name: '', email: '', message: '' });
+        setTimeout(() => {
+          setIsSubmitted(false);
+        }, 3000);
+      } else {
+        setSubmitError(
+          data?.error || 'Unable to send message. Please try again later.'
+        );
+      }
+    } catch (error) {
+      setSubmitError('Network error. Please check your connection and try again.');
+    } finally {
+      setIsSending(false);
+    }
   };
 
   const handleChange = (
@@ -166,11 +202,16 @@ export default function Contact() {
                   />
                 </div>
 
+                {submitError ? (
+                  <p className="text-sm text-red-600">{submitError}</p>
+                ) : null}
+
                 <Button
                   type="submit"
-                  className="w-full h-14 bg-coral hover:bg-navy text-white font-rubik font-medium text-base transition-colors duration-300"
+                  disabled={isSending}
+                  className="w-full h-14 bg-coral hover:bg-navy text-white font-rubik font-medium text-base transition-colors duration-300 disabled:cursor-not-allowed disabled:bg-coral/70"
                 >
-                  Send Message
+                  {isSending ? 'Sending...' : 'Send Message'}
                   <Send size={18} className="ml-2" />
                 </Button>
               </form>

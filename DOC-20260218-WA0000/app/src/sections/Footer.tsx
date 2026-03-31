@@ -1,29 +1,30 @@
-import { Facebook, Instagram, Twitter, Linkedin, Youtube } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Linkedin, MessageCircle } from 'lucide-react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const quickLinks = [
   { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
   { name: 'Programs', href: '#programs' },
-  { name: 'Events', href: '#events' },
+  { name: 'Gallery', href: '#Gallery' },
+  { name: 'Testimonials', href: '#testimonials' },
   { name: 'Contact', href: '#contact' },
 ];
 
 const programs = [
-  { name: 'Leadership', href: '#programs' },
-  { name: 'Creative Arts', href: '#programs' },
-  { name: 'STEM', href: '#programs' },
-  { name: 'Community Service', href: '#programs' },
-  { name: 'Sports', href: '#programs' },
-  { name: 'Careers', href: '#programs' },
+  { name: 'Health and Violence Against Women & Children', href: '#programs' },
+  { name: 'Livelihoods and Youth Employability', href: '#programs' },
+  { name: 'Climate Change, Peace and Security', href: '#programs' },
+  { name: 'Equitable Access to Quality Education', href: '#programs' },
+  // { name: 'Sports & Wellness', href: '#programs' },
+  // { name: 'Career Readiness', href: '#programs' },
 ];
 
 const socialLinks = [
-  { icon: Facebook, href: '#', label: 'Facebook' },
-  { icon: Instagram, href: '#', label: 'Instagram' },
-  { icon: Twitter, href: '#', label: 'Twitter' },
-  { icon: Linkedin, href: '#', label: 'LinkedIn' },
-  { icon: Youtube, href: '#', label: 'YouTube' },
+  { icon: Facebook, href: 'https://web.facebook.com/profile.php?id=100090500571977', label: 'Facebook' },
+  { icon: Instagram, href: 'https://www.instagram.com/we_inspire_africa?fbclid=IwY2xjawQ4aiVleHRuA2FlbQIxMABicmlkETFadmliazByclFLR2JpeTI3c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHnhqjZxS3aqw94rCTo6ziS460-RA878iYa6Q5SJ-F2ksHf-SU91UQCxMQCEp_aem_ymOAdg9eCrGepzXNNrbF-Q', label: 'Instagram' },
+  { icon: Twitter, href: 'https://x.com/We_Inspirefrica', label: 'Twitter' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/in/we-inspire-africa-459232275/', label: 'LinkedIn' },
+  { icon: MessageCircle, href: 'https://wa.me/254725142221?text=Hello thank you for your interest how can I help you&body=Hi there, I would like to get in touch with you.', label: 'WhatsApp' },
 ];
 
 export default function Footer() {
@@ -50,12 +51,12 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
               <img
-                src="/images/logo.png"
-                alt="Youth Community"
+                src="\images\we inspire logo.jpeg"
+                alt="We Inspire Africa"
                 className="w-10 h-10"
               />
               <span className="font-rubik font-medium text-white text-lg">
-                Youth Community
+                We Inspire Africa
               </span>
             </div>
             <p className="text-white/70 leading-relaxed mb-6">
@@ -132,22 +133,30 @@ export default function Footer() {
               Contact Us
             </h5>
             <div className="space-y-4 text-white/70">
-              <p>123 Community Street</p>
-              <p>City, State 12345</p>
+              <p>At Bamburi behind Masjid Noor, along Utange Road</p>
+              <p>Mombasa, Bamburi</p>
               <p className="pt-2">
                 <a
-                  href="tel:+15551234567"
+                  href="tel:+254725142221"
                   className="hover:text-coral transition-colors duration-300"
                 >
-                  (555) 123-4567
+                  (+254) 725-142-221
                 </a>
               </p>
               <p>
                 <a
-                  href="mailto:hello@youthcommunity.org"
+                  href="https://wa.me/254725142221?text=Hello thank you for your interest how can I help you&body=Hi there, I would like to get in touch with you."
                   className="hover:text-coral transition-colors duration-300"
                 >
-                  hello@youthcommunity.org
+                  Message us on WhatsApp
+                </a>
+              </p>
+              <p>
+                <a
+                  href="mailto:inspireafrica001@gmail.com?subject=Hello thank you for your interest how can I help you&body=Hi there, I would like to get in touch with you."
+                  className="hover:text-coral transition-colors duration-300"
+                >
+                  inspireafrica001@gmail.com
                 </a>
               </p>
             </div>
@@ -157,17 +166,17 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-white/50 text-sm">
-            © 2026 Youth Community Organization. All rights reserved.
+            © 2026 We Inspire Africa. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
             <a
-              href="#"
+              href="/privacy-policy.html"
               className="text-white/50 hover:text-coral transition-colors duration-300"
             >
               Privacy Policy
             </a>
             <a
-              href="#"
+              href="/terms-of-service.html"
               className="text-white/50 hover:text-coral transition-colors duration-300"
             >
               Terms of Service

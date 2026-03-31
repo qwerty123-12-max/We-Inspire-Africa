@@ -9,7 +9,7 @@ const navLinks = [
   { name: 'Home', href: '#home' },
   { name: 'About', href: '#about' },
   { name: 'Programs', href: '#programs' },
-  { name: 'Events', href: '#events' },
+  { name: 'Gallery', href: '#Gallery' },
   { name: 'Testimonials', href: '#testimonials' },
   { name: 'Contact', href: '#contact' },
 ];
@@ -56,7 +56,7 @@ export default function Navigation() {
           >
             <img
               src="\images\we inspire logo.jpeg"
-              alt="Youth Community"
+              alt="We Inspire Africa"
               className="w-10 h-10"
             />
             <span className="font-rubik font-medium text-white text-lg hidden sm:block">

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Privacy Policy</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial; margin: 40px; line-height: 1.6; color: #333; }
+    h1, h2 { color: #2c3e50; }
+  </style>
+  <script src="privacy/terms.js"></script>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p><strong>Last Updated:</strong> 3/3/28/2026</p>
+
+<h2>1. Legal Compliance</h2>
+<p>
+We comply with:
+<ul>
+  <li>General Data Protection Regulation (GDPR)</li>
+  <li>Kenya Data Protection Act, 2019</li>
+</ul>
+</p>
+
+<h2>2. Information We Collect</h2>
+<ul>
+  <li>Name, email, phone number</li>
+  <li>Youth program participation data</li>
+  <li>Website usage data and cookies</li>
+</ul>
+
+<h2>3. Legal Basis for Processing</h2>
+<ul>
+  <li>User consent</li>
+  <li>Legitimate organizational interest</li>
+  <li>Legal obligations</li>
+</ul>
+
+<h2>4. How We Use Data</h2>
+<ul>
+  <li>Provide services and programs</li>
+  <li>Communicate with users</li>
+  <li>Improve website functionality</li>
+</ul>
+
+<h2>5. Data Sharing</h2>
+<p>
+We do not sell personal data. Data may be shared with:
+</p>
+<ul>
+  <li>Partner organizations</li>
+  <li>Donors (aggregated, non-identifiable data)</li>
+  <li>Authorities when required by law</li>
+</ul>
+
+<h2>6. Data Protection</h2>
+<p>We implement appropriate technical and organizational safeguards.</p>
+
+<h2>7. Children's Privacy</h2>
+<p>
+We protect minors’ data and may require parental consent for users under 18.
+</p>
+
+<h2>8. Your Rights</h2>
+<ul>
+  <li>Access your data</li>
+  <li>Request correction or deletion</li>
+  <li>Withdraw consent</li>
+  <li>Request data portability</li>
+</ul>
+
+<h2>9. Data Retention</h2>
+<p>We retain data only as long as necessary.</p>
+
+<h2>10. Contact</h2>
+<p>Email: inspireafrica001@gmail.com</p>
+
+<!-- COOKIE BANNER -->
+<script>
+if (!localStorage.getItem("cookieConsent")) {
+  const banner = document.createElement("div");
+  banner.innerHTML = `
+    <div style="position:fixed;bottom:0;width:100%;background:#222;color:#fff;padding:15px;text-align:center;">
+      We use cookies to improve your experience.
+      <button onclick="acceptCookies()" style="margin-left:10px;">Accept</button>
+    </div>
+    `;
+  document.body.appendChild(banner);
+}
+
+function acceptCookies() {
+  localStorage.setItem("cookieConsent", "accepted");
+  location.reload();
+}
+</script>
+
+</body>
+</html>

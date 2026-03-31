@@ -4,27 +4,33 @@ import { useCountUp } from '@/hooks/useScrollAnimation';
 const stats = [
   {
     icon: Users,
-    value: 500,
+    value: 70,
     suffix: '+',
-    label: 'Youth Members',
+    label: 'Current Youth Members',
   },
   {
     icon: Calendar,
-    value: 50,
+    value: 1,
     suffix: '+',
     label: 'Annual Events',
   },
   {
     icon: Building2,
-    value: 15,
+    value: 6,
     suffix: '+',
     label: 'Partner Organizations',
   },
   {
     icon: Award,
-    value: 10,
+    value: 5,
     suffix: '',
     label: 'Years of Impact',
+  },
+  {
+    icon: Users,
+    value: 500,
+    suffix: '+',
+    label: 'Number of youths mentored',
   },
 ];
 
