@@ -5,7 +5,7 @@ import About from '@/sections/About';
 import Programs from '@/sections/Programs';
 import Stats from '@/sections/Stats';
 import Gallery from '@/sections/Gallery';
-import Testimonials from '@/sections/Testimonials';
+import Support from '@/sections/Support';
 import Contact from '@/sections/Contact';
 import Footer from '@/sections/Footer';
 import './App.css';
@@ -34,7 +34,7 @@ function App() {
         <Programs />
         <Stats />
         <Gallery />
-        <Testimonials />
+        <Support />
         <Contact />
       </main>
       <Footer />
