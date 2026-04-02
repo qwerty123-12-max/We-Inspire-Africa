@@ -64,7 +64,7 @@ function App() {
               <button
                 type="button"
                 onClick={acceptCookies}
-                className="inline-flex items-center justify-center rounded-full bg-[#0f1f49] px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
+                className="inline-flex items-center justify-center rounded-full bg-navy px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-800"
               >
                 Accept cookies
               </button>
