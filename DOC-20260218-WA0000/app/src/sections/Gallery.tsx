@@ -13,7 +13,7 @@ const mediaItems: MediaItem[] = [
   {
     id: 1,
     type: "image",
-    src: "/images/msf.jpg",
+    src: "/images/scarly.jpg",
     alt: "Mental health talks with MSF",
     title: "Mental health talks with MSF",
   },
@@ -27,7 +27,7 @@ const mediaItems: MediaItem[] = [
   {
     id: 3,
     type: "image",
-    src: "/images/employ.jpg",
+    src: "/images/scarly1.jpg",
     alt: "Employment opportunitys talks with Swahilipot Hub Foundation",
     title: "Employment opportunitys talks with Swahilipot Hub Foundation",
   },
