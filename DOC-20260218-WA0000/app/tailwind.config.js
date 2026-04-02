@@ -18,10 +18,10 @@ module.exports = {
           DEFAULT: "#7dd3fc",
           foreground: "#0f172a",
         },
-        coral: "#1583cc",
-        navy: "#030c05",
+        coral: "#15a7cc",
+        navy: "#03290d",
         "light-gray": "#eff6ff",
-        "grey-text": "#475569",
+        "grey-text": "#000102",
         destructive: {
           DEFAULT: "hsl(var(--destructive) / <alpha-value>)",
           foreground: "hsl(var(--destructive-foreground) / <alpha-value>)",
