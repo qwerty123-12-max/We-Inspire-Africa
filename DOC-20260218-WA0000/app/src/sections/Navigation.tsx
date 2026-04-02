@@ -61,7 +61,7 @@ export default function Navigation() {
             />
             <span className="font-rubik font-medium text-white text-lg hidden sm:block">
               <span className="bungee-regular">
-                We <span style={{ color: '#12581c' }}>Inspire</span> Africa
+                We <span style={{ color: '#198129' }}>Inspire</span> Africa
               </span>
             </span>
           </a>
