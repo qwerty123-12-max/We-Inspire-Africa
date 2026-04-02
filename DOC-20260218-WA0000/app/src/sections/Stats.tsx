@@ -28,7 +28,7 @@ const stats = [
   },
   {
     icon: Users,
-    value: 500,
+    value: 1000,
     suffix: '+',
     label: 'Number of youths mentored',
   },
